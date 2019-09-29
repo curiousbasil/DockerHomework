@@ -24,3 +24,24 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 
+# List the hello-world image that was downloaded to your machine:
+
+docker image ls
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+redis               latest              63130206b0fa        2 weeks ago         98.2MB
+alpine              latest              961769676411        5 weeks ago         5.58MB
+hello-world         latest              fce289e99eb9        9 months ago        1.84kB
+
+
+# List the hello-world container (spawned by the image) which exits after displaying its message. If it were still running, you would not need the --all option:
+
+docker container ls --all
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                     PORTS               NAMES
+9b2c0ac282ee        hello-world         "/hello"                 2 hours ago         Exited (0) 2 hours ago                         pensive_lalande
+9d79787d9cf2        alpine              "/bin/sh"                10 days ago         Exited (0) 10 days ago                         stoic_borg
+1941ee4dfc4e        alpine              "echo 'hello from al…"   10 days ago         Exited (0) 10 days ago                         musing_liskov
+635ee5af5650        alpine              "ls -l"                  10 days ago         Exited (0) 10 days ago                         beautiful_turing
+dc7df4e6b4d8        hello-world         "/hello"                 10 days ago         Exited (0) 10 days ago                         stupefied_tharp
+2133db9129e7        redis               "docker-entrypoint.s…"   10 days ago         Exited (255) 3 hours ago   6379/tcp            cocky_wiles
+
+
