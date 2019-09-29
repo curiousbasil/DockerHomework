@@ -1,0 +1,37 @@
+docker info
+Client:
+ Debug Mode: false
+
+Server:
+ Containers: 5
+  Running: 1
+  Paused: 0
+  Stopped: 4
+ Images: 3
+ Server Version: 19.03.2
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Native Overlay Diff: true
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+ Swarm: inactive
+ Runtimes: runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 894b81a4b802e4eb2a91d1ce216b8817763c29fb
+ runc version: 425e105d5a03fabd737a126ad93d62a9eeede87f
+ init version: fec3683
+ Security Options:
+  seccomp
+   Profile: default
+ Kernel Version: 4.9.184-linuxkit
+ Operating System: Docker Desktop
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 2
+
